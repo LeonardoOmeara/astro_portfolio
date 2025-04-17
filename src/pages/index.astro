@@ -1,9 +1,8 @@
 ---
-import Card from '../components/Card.astro';
-import Layout from '../layouts/Layout.astro';
-import Header from '../components/Header.astro';
-import Badge from '../components/Badge.astro';
-
+import Card from "../components/Card.astro";
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Badge from "../components/Badge.astro";
 
 // Card to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
@@ -11,10 +10,32 @@ import Badge from '../components/Badge.astro';
 
 <Layout>
 	<main>
-		<h1>Buenas, soy Leonardo <Badge>Disponible para trabajar!</Badge></h1>
-		<h2>+1.5 años de experiencia. Desarrollador de software y amante de la pecosa ⚽...
+		<section class="w-full lg:w-[740px] mx-auto py-44">
+			<img
+				class="rounded-full w-12 h-12 mb-4"
+				src="/miyamoto.jpg"
+				alt="Leo photo"
+			/>
 
-			De Bogotá, Colombia. Con experiencia en desarrollo de sitios web y en procesamiento de datos con Python y SQL
-		</h2>
+			<h1
+				class="text-white text-5xl font-bold flex justify-center flex-row gap-x-4 pb-4"
+			>
+				Buenas, soy Leonardo <a
+					href="https://linkedin.com/in/leonardo-omeara"
+					target="blank"
+					rel="noopener"
+					class="flex justify-center items-center"
+				>
+					<Badge>Disponible para trabajar!</Badge>
+				</a>
+			</h1>
+			<h2 class="text-xl opacity-80">
+				+1.5 años de experiencia. Desarrollador de software y amante de
+				la pecosa ⚽... De Bogotá, Colombia. Con experiencia en
+				desarrollo de sitios web y en procesamiento de datos con Python
+				y SQL
+			</h2>
+			<ul></ul>
+		</section>
 	</main>
 </Layout>

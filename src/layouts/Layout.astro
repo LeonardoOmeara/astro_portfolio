@@ -1,8 +1,8 @@
 ---
 import Header from "../components/Header.astro";
-import '../styles/global.css'
+import "../styles/global.css";
 // Supports weights 100-900
-import '@fontsource-variable/onest';
+import "@fontsource-variable/onest";
 ---
 
 <!doctype html>
@@ -15,22 +15,22 @@ import '@fontsource-variable/onest';
 		<title>Astro Basics</title>
 	</head>
 	<body>
-		<Header/>
+		<Header />
 		<slot />
 	</body>
 </html>
 
 <style is:global>
-:root{
-	color-scheme: light dark;
-}
+	:root {
+		color-scheme: light dark;
+	}
 
-	html{
-		font-family: 'Onest Variable', sans-serif;
+	html {
+		font-family: "Onest Variable", sans-serif;
 	}
 	body {
 		display: flex;
-		justify-content: center;
+		flex-direction: column;
 		background-color: #050505;
 		min-height: 100vh;
 	}
